@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelLineal.css">
+    <title>Interpolaciones</title>
+    <style>
+        .text{
+            color: aliceblue;
+            font-size: 50px;
+            margin-left: auto;
+        }
+    </style>
+
+</head>
+<body>
+
+        <h1 class=text>Interpolación Lineal </h1>
+    <div class="container">
+        </div class="buttons">
+            
+            <a href="InterpolacionCuadratica.html" class="btn btn-2">Interpolación Cuadrática</a>
+            <a href="IntepolacionLinealLagrange.html" class="btn btn-3">Interpolación Lineal Lagrange</a>
+            <a href="InterpolacionCuadraticaLagrange.html" class="btn btn-4">Interpolación Cuadrática Lagrange</a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <form class="X"> 
+            <input type="number" name="" id="valorX" required>
+		    <label class="lbl-X">
+			      <span class="num-X">X=</span>
+            </label>	    
+    <br>    
+		    <input type="number" name="" id="valorX0" required>
+		    <label class="lbl-X0">
+			    <span class="num-X0">X0=</span>
+		    </label>	
+    <br>    
+		    <input type="number" name="" id="valorX1" required>
+		    <label class="lbl-X1">
+			    <span class="num-X1">X1=</span>
+		    </label>
+    <br>   
+		    <input type="number" name="" id="valorFX0" required>
+		    <label class="lbl-FX0">
+			    <span class="num-FX0">F(X0)=</span>
+		    </label>	
+    <br>
+		    <input type="number" name="" id="valorFX1" required>
+		    <label class="lbl-FX1">
+			    <span class="num-FX1">F(X1)=</span>
+		    </label>
+            <br>
+            <br>
+            <p class='text'> El resultado es: <span id="el-resultado"></span>
+            </p>
+        
+        <div class="LimpiarObtener">
+            <button type="reset" class="btnn limpiar">Limpiar</button>
+            <button type="button" onclick="calcular()" class="btnn obtener">Obtener</button>
+        </div> 
+	</form>
+  <script type="text/Javascript" src="function.js"></script>
+</body>
+</html>

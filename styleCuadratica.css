@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,400;1,600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+title{
+    font-size: 40;
+    font-family: nunito;
+    font-style: normal;
+    color: floralwhite;
+}
+
+/*body*/
+body{
+    font-family: 'Nunito', sans-serif;
+font-weight: 600;
+background: #0b1721;
+
+}
+.container{
+min-height:5vh;
+display: flex;
+justify-content: left;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+.btn{
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 1.5rem;
+    position: relative;
+    margin:5px;
+}
+
+/*btn-1*/
+.btn-1{
+    background-color: #039be5;
+    color: floralwhite;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+ .btn-1::after, .btn-1::before{
+    content: "";
+    opacity: .3;
+    position: absolute;
+    background: #039be5;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+.btn-1:hover{
+    transform: translate(-12px, -12px);
+
+}
+.btn-1:hover::after{
+    transform: translate(6px, 6px);
+}
+.btn-1:hover::before{
+    transform: translate(12px, 12px);
+}
+
+/*btn2*/
+.btn-2{
+    background-color: #039be5;
+    color: floralwhite;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}  
+.btn-2::after, .btn-2::before{
+    content: "";
+    opacity: .3;
+    position: absolute;
+    background: #039be5;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+.btn-2:hover{
+    transform: translate(-12px, -12px);
+
+}
+.btn-2:hover::after{
+    transform: translate(6px, 6px);
+}
+.btn-2:hover::before{
+    transform: translate(12px, 12px);
+}
+
+/*btn3*/
+.btn-3{
+    background-color: #039be5;
+    color: floralwhite;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}  
+.btn-3::after, .btn-3::before{
+    content: "";
+    opacity: .3;
+    position: absolute;
+    background: #039be5;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+.btn-3:hover{
+    transform: translate(-12px, -12px);
+
+}
+.btn-3:hover::after{
+    transform: translate(6px, 6px);
+}
+.btn-3:hover::before{
+    transform: translate(12px, 12px);
+}
+
+/*btn4*/
+.btn-4{
+    background-color: #039be5;
+    color: floralwhite;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+} 
+.btn-4::after, .btn-4::before{
+    content: "";
+    opacity: .3;
+    position: absolute;
+    background: #039be5;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+.btn-4:hover{
+    transform: translate(-12px, -12px);
+
+}
+.btn-4:hover::after{
+    transform: translate(6px, 6px);
+}
+.btn-4:hover::before{
+    transform: translate(12px, 12px);
+}
+
+/*valorX*/
+
+.X{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+    
+}
+.X input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+.X .lbl-X{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #fff;
+    
+}
+.X .lbl-X:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.num-X{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+.X input:focus + .lbl-X .num-X,.X input:valid + .lbl-X .num-X{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.X input:focus + .lbl-X:after, .X input:valid + .lbl-X:after{
+    transform: translateX(0%);
+}
+
+/*valorX0*/
+.X{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+}
+.X input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+.X .lbl-X0{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #fff;
+    top: 50px;
+}
+.X .lbl-X0:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.num-X0{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+
+}
+.X input:focus + .lbl-X0 .num-X0,.X input:valid + .lbl-X0 .num-X0{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.X input:focus + .lbl-X0:after, .X input:valid + .lbl-X0:after{
+    transform: translateX(0%);
+}
+
+/*valorX1*/
+.X{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+}
+.X input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+.X .lbl-X1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #fff;
+    top: 100px;
+}
+.X .lbl-X1:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.num-X1{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+
+}
+.X input:focus + .lbl-X1 .num-X1,.X input:valid + .lbl-X1 .num-X1{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.X input:focus + .lbl-X1:after, .X input:valid + .lbl-X1:after{
+    transform: translateX(0%);
+}
+/*valorX2*/
+.X{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+}
+.X input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+.X .lbl-X2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #fff;
+    top: 150px;
+}
+.X .lbl-X2:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.num-X2{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+
+}
+.X input:focus + .lbl-X2 .num-X2,.X input:valid + .lbl-X2 .num-X2{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.X input:focus + .lbl-X2:after, .X input:valid + .lbl-X2:after{
+    transform: translateX(0%);
+}
+
+/*valorF(X0)*/
+.X{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+}
+.X input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+.X .lbl-FX0{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #fff;
+    top: 200px;
+}
+.X .lbl-FX0:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.num-FX0{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+
+}
+.X input:focus + .lbl-FX0 .num-FX0,.X input:valid + .lbl-FX0 .num-FX0{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.X input:focus + .lbl-FX0:after, .X input:valid + .lbl-FX0:after{
+    transform: translateX(0%);
+}
+
+/*valorF(X1)*/
+.X{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+}
+.X input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+.X .lbl-FX1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #fff;
+    top: 250px;
+}
+.X .lbl-FX1:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.num-FX1{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+
+}
+.X input:focus + .lbl-FX1 .num-FX1,.X input:valid + .lbl-FX1 .num-FX1{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.X input:focus + .lbl-FX1:after, .X input:valid + .lbl-FX1:after{
+    transform: translateX(0%);
+}
+
+/*valorF(X2)*/
+.X{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+}
+.X input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+.X .lbl-FX2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #fff;
+    top: 300px;
+}
+.X .lbl-FX2:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.num-FX2{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+
+}
+.X input:focus + .lbl-FX2 .num-FX2,.X input:valid + .lbl-FX2 .num-FX2{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.X input:focus + .lbl-FX2:after, .X input:valid + .lbl-FX2:after{
+    transform: translateX(0%);
+}
+
+/*btn limpiar y obtener*/
+.limpiarObtener{
+    min-height:15vh;
+    display: flex;
+    justify-content: left;
+}.buttons{
+    display: flex;
+    flex-direction: row;
+}.limpiar{
+    background-color: rgb(208, 9, 9);
+    color: floralwhite;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 1.5rem;
+    position: relative;
+    margin:5px;
+    min-height:12vh;
+    top:30px;
+}.limpiar:hover{
+    background-color: rgb(181, 29, 29);
+}.obtener{
+    background-color: rgb(30, 190, 22);
+    color: floralwhite;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 1.5rem;
+    position: relative;
+    margin:5px;
+    min-height:12vh;
+    top: 30px;
+}.obtener:hover{
+    background-color: green;
+}
+#el-resultado{
+    font-size: 14;
+    font-family: nunito;
+    font-style: normal;
+    color: floralwhite;
+}
