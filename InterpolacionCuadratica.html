@@ -33,42 +33,50 @@
 <br>
 <br>
 <form class="X"> 
-    <input type="number" name="" id="valorX" required>
+    <input type="number" step="any" name="" id="valorX" required>
     <label class="lbl-X">
           <span class="num-X">X=</span>
     </label>	    
 <br>    
-    <input type="number" name="" id="valorX0" required>
+    <input type="number" step="any" name="" id="valorX0" required>
     <label class="lbl-X0">
         <span class="num-X0">X0=</span>
     </label>	
 <br>    
-    <input type="number" name="" id="valorX1" required>
+    <input type="number" step="any" name="" id="valorX1" required>
     <label class="lbl-X1">
         <span class="num-X1">X1=</span>
     </label>
 <br>
-    <input type="number" name="" id="valorX2" required>
+    <input type="number" step="any" name="" id="valorX2" required>
     <label class="lbl-X2">
         <span class="num-X2">X2=</span>
     </label>
 <br>
-    <input type="number" name="" id="valorFX0" required>
+    <input type="number" step="any" name="" id="valorFX0" required>
     <label class="lbl-FX0">
         <span class="num-FX0">F(X0)=</span>
     </label>	
 <br>
-    <input type="number" name="" id="valorFX1" required>
+    <input type="number" step="any" name="" id="valorFX1" required>
     <label class="lbl-FX1">
         <span class="num-FX1">F(X1)=</span>
     </label>
     <br>
-    <input type="number" name="" id="valorFX2" required>
+    <input type="number" step="any" name="" id="valorFX2" required>
     <label class="lbl-FX2">
         <span class="num-FX2">F(X2)=</span>
     </label>
     <br>
     <p class='text'>El resultado es: <span id="el-resultado"></span></p>
+    </p>
+    <input type="number" step="any" name="" id="valorVerdadero" required>
+    <label class="valorVerdadero">
+    <span class="errorVerdadero">Error Verdadero=</span>
+    </label>
+    <p class="number"> Et= <span id="ErrorPorcentual"></span>
+    </p>
+
     <div class="LimpiarObtener">
         <button type="reset" class="btnn limpiar">Limpiar</button>
         <button type="button" onclick="calcular()" class="btnn obtener">Obtener</button>

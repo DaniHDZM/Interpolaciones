@@ -1,17 +1,20 @@
 const btn = document.getElementById('btnn obtener')
 addEventListener('click', function calcular(){
-const X = parseInt(document.getElementById('valorX').value);
-const X0 = parseInt(document.getElementById('valorX0').value);
-const X1 = parseInt(document.getElementById('valorX1').value);
-const X2 = parseInt(document.getElementById('valorX2').value);
-const FX0 = parseInt(document.getElementById('valorFX0').value);
-const FX1 = parseInt(document.getElementById('valorFX1').value);
-const FX2 = parseInt(document.getElementById('valorFX2').value);
-let cero=((X-X1)/(X0-X1))*((X-X2)/(X0-X2)) *FX0;
-let uno= ((X-X0)/(X1-X0))*((X-X2)/(X1-X2)) *FX1;
-let dos= ((X-X0)/(X2-X0))*((X-X1)/(X2-X1)) *FX2;
+    var x = Number(document.getElementById('valorX').value);
+    var x0 = Number(document.getElementById('valorX0').value); 
+    var x1 = Number(document.getElementById('valorX1').value);
+    var x2 = Number(document.getElementById('valorX2').value);
+    var fx0 = Number(document.getElementById('valorFX0').value);
+    var fx1 = Number(document.getElementById('valorFX1').value); 
+    var fx2 = Number(document.getElementById('valorFX2').value); 
+    
+    
+    var partOne = ((fx0) * ((x - x1) * (x - x2)) / ((x0 - x1) * (x0 - x2)));
+    var partTwo = ((fx1) * ((x - x0) * (x - x2)) / ((x1 - x0) * (x1 - x2)));
+    var partThree = ((fx2) * ((x - x0) * (x -x1)) / ((x2 - x0) * (x2 - x1)));
+    var totalLagraSegGra = partOne + partTwo + partThree;
 
-document.getElementById('el-resultado').innerHTML = cero+uno+dos;
+document.getElementById('el-resultado').innerHTML = totalLagraSegGra
 });
 
 

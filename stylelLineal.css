@@ -432,6 +432,65 @@ justify-content: left;
     transform: translateX(0%);
 }
 
+/*Error verdadero*/
+.X{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+}
+.X input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #fff;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+    top:150;
+}
+.X .valorVerdadero{ 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #fff;
+    top: 250px;
+}
+.X .valorVerdadero:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #2ecece;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+    top:150px;
+}
+.errorVerdadero{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #fff;
+    top:150px;
+
+}
+.X input:focus + .valorVerdadero .errorVerdadero,.X input:valid + .valorVerdadero .errorVerdadero{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #2ecece;
+}
+.X input:focus + .valorVerdadero:after, .X input:valid + .valorVerdadero:after{
+    transform: translateX(0%);
+}
+
+
+
 
 
 
@@ -477,4 +536,12 @@ justify-content: left;
     font-family: nunito;
     font-style: normal;
     color: floralwhite;
+    top: 300px;
+}
+#errorporcentual{
+    font-size: 14;
+    font-family: nunito;
+    font-style: normal;
+    color: floralwhite;
+    top: 500px;
 }
